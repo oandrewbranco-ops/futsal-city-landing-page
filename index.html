@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futsal City</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="mainNav" class="main-nav">
+        <div class="nav-container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#academy">Academy</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="search-box">
+                <button class="search-btn" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                </button>
+                <input type="text" class="search-txt" placeholder="Search">
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Futsal City</h1>
+            <p>UNLEASH YOUR INNER ATHLETE</p>
+            <a href="https://club.spond.com/landing/signup/futsalcity/form/F76EF03DDB764AA99D2B68381B00324A" target="_blank" class="btn">Register For Tryouts</a>
+            <div id="scroll-arrow" class="scroll-down-arrow"></div>
+        </div>
+    </header>
+
+    <section id="about" class="content-section about-us">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="section-text">
+                <p>Welcome to Futsal City, where we offer top-tier training for athletes of all ages. Our programs are designed to develop skills, passion, and teamwork, preparing you for success both on and off the court.</p>
+            </div>
+            <div class="features">
+                <div class="feature-item">
+                    <h3>Elite Coaches</h3>
+                    <p>Our team of experienced coaches focuses on developing skills and tactics for all ages.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>State-of-the-art Facilities</h3>
+                    <p>Train in a top-notch environment at Recreativa da Ciser, one of the best spaces for futsal.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Community & Networking</h3>
+                    <p>Join a community that encourages sportsmanship and growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="content-section programs">
+        <div class="container">
+            <h2>Our Programs</h2>
+            <div class="program-cards">
+                <div class="card">
+                    <h3>Futsal School</h3>
+                    <p>From initiation to high performance, we prepare athletes for all levels.</p>
+                </div>
+                <div class="card">
+                    <h3>High-Performance Teams</h3>
+                    <p>Our teams participate in national and international tournaments, building champions.</p>
+                </div>
+                <div class="card">
+                    <h3>Beach Tennis & Gym</h3>
+                    <p>Complement your training with other modalities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="content-section team">
+        <div class="container">
+            <h2>Our Team</h2>
+            <div class="section-text">
+                <p>Meet our dedicated and passionate coaching staff who are committed to your development. Our team brings a wealth of experience from different backgrounds to help you reach your full potential.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="academy" class="content-section academy">
+        <div class="container">
+            <h2>Academy</h2>
+            <div class="section-text">
+                <p>Our academy program provides a structured pathway for young athletes to hone their skills and grow within a competitive environment. We focus on technical proficiency, tactical awareness, and mental toughness.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="schedule" class="content-section schedule">
+        <div class="container">
+            <h2>Schedule</h2>
+            <div class="section-text">
+                <p>Check out our training and game schedule. We offer flexible options to fit your routine. Contact us for more details on specific times and locations for your age group.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section contact-us">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm" action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <a href="https://wa.me/5547999893177" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/futsalcitytb" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:citiveras@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div id="video-popup" class="popup-overlay">
+        <div class="popup-content">
+            <button class="close-btn">&times;</button>
+            <div class="video-container">
+                <iframe id="futsal-video" width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <a href="#about" class="btn btn-popup close-popup-link">Learn More</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
