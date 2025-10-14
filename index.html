@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Futsal City - Elite futsal training for all ages. Develop your skills with the best coaches.">
+  <title>Futsal City - Elite Futsal Training</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button id="accessibility-btn" class="accessibility-btn" aria-label="Accessibility options">
+    <i data-feather="settings"></i>
+  </button>
+
+  <div id="accessibility-panel" class="accessibility-panel">
+    <div class="accessibility-header">
+      <h3>Accessibility</h3>
+      <button id="close-accessibility" aria-label="Close panel">
+        <i data-feather="x"></i>
+      </button>
+    </div>
+    <div class="accessibility-content">
+      <div class="accessibility-option">
+        <label for="font-size">Font Size</label>
+        <div class="font-controls">
+          <button id="decrease-font" aria-label="Decrease font">A-</button>
+          <span id="font-display">100%</span>
+          <button id="increase-font" aria-label="Increase font">A+</button>
+        </div>
+      </div>
+      <div class="accessibility-option">
+        <label for="high-contrast">High Contrast</label>
+        <label class="switch">
+          <input type="checkbox" id="high-contrast">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="accessibility-option">
+        <label for="reduce-motion">Reduce Animations</label>
+        <label class="switch">
+          <input type="checkbox" id="reduce-motion">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div id="reading-progress" class="reading-progress"></div>
+
+  <header id="header" class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="logo" aria-label="Futsal City - Home page">
+          FUTSAL<span class="logo-accent">CITY</span>
+        </a>
+
+        <nav class="nav-desktop" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#programs">Programs</a>
+          <a href="#team">Coaches</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions" id="header-actions">
+          <button class="btn btn-primary" id="cta-enroll">
+            <span>Enroll Now</span>
+          </button>
+          
+          <div class="search-container">
+            <button id="search-toggle" class="search-toggle" aria-label="Search the site">
+              <i data-feather="search"></i>
+            </button>
+            <div id="search-box" class="search-box">
+              <input type="search" id="search-input" placeholder="Search..." aria-label="Search field">
+              <button id="search-submit" aria-label="Perform search">
+                <i data-feather="arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <div id="mobile-menu" class="mobile-menu">
+    <nav aria-label="Mobile navigation">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#programs" class="mobile-link">Programs</a>
+      <a href="#team" class="mobile-link">Coaches</a>
+      <a href="#schedule" class="mobile-link">Schedule</a>
+      <a href="#testimonials" class="mobile-link">Testimonials</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <button class="btn btn-primary mobile-cta">
+        <span>Enroll Now</span>
+      </button>
+    </nav>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-background"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Unleash Your Futsal <span class="hero-accent">Potential</span>
+          </h1>
+          <p class="hero-description">
+            Developing elite athletes with skill, discipline, and passion. Programs available for all ages. Join us on the court!
+          </p>
+          <div class="hero-ctas">
+            <a href="#programs" class="btn btn-secondary">
+              <span>Our Programs</span>
+            </a>
+            <button id="open-tryout-btn" class="btn btn-primary">
+              <span>Join the Tryouts!</span>
+            </button>
+          </div>
+          
+          <div class="scroll-indicator">
+            <span>Scroll to discover</span>
+            <i data-feather="chevron-down"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section section-sponsors">
+      <div class="container">
+        <h2 class="section-title">Our Sponsors</h2>
+        <div class="sponsor-marquee">
+          <div class="marquee-content">
+            <img src="https://via.placeholder.com/150x80/ffffff/000000?text=Brand+1" alt="Sponsor Brand 1">
+            <img src="https://via.placeholder.com/150x80/ffffff/000000?text=Brand+2" alt="Sponsor Brand 2">
+            <img src="https://via.placeholder.com/150x80/ffffff/000000?text=Brand+3" alt="Sponsor Brand 3">
+            <img src="https://via.placeholder.com/150x80/ffffff/000000?text=Brand+4" alt="Sponsor Brand 4">
+            <img src="https://via.placeholder.com/150x80/ffffff/000000?text=Brand+5" alt="Sponsor Brand 5">
+            <img src="https://via.placeholder.com/150x80/ffffff/000000?text=Brand+6" alt="Sponsor Brand 6">
+            <img src="https://via.placeholder.com/150x80/ffffff/000000?text=Brand+1" alt="Sponsor Brand 1">
+            <img src="https://via.placeholder.com/150x80/ffffff/000000?text=Brand+2" alt="Sponsor Brand 2">
+            <img src="https://via.placeholder.com/150x80/ffffff/000000?text=Brand+3" alt="Sponsor Brand 3">
+            <img src="https://via.placeholder.com/150x80/ffffff/000000?text=Brand+4" alt="Sponsor Brand 4">
+            <img src="https://via.placeholder.com/150x80/ffffff/000000?text=Brand+5" alt="Sponsor Brand 5">
+            <img src="https://via.placeholder.com/150x80/ffffff/000000?text=Brand+6" alt="Sponsor Brand 6">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i data-feather="users"></i>
+            </div>
+            <div class="stat-number" data-target="500">0</div>
+            <div class="stat-label">Athletes Trained</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i data-feather="award"></i>
+            </div>
+            <div class="stat-number" data-target="15">0</div>
+            <div class="stat-label">Years of Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i data-feather="trophy"></i>
+            </div>
+            <div class="stat-number" data-target="50">0</div>
+            <div class="stat-label">Championships Won</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i data-feather="target"></i>
+            </div>
+            <div class="stat-number" data-target="98">0</div>
+            <div class="stat-label">% Satisfaction</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="about" class="section section-about">
+      <div class="container">
+        <h2 class="section-title">About Futsal City</h2>
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-image">
+              <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=600&h=600&fit=crop" alt="United futsal team" loading="lazy">
+            </div>
+            <h3>Our Mission</h3>
+            <p>To develop complete athletes through futsal, promoting values like teamwork, discipline, and respect, while improving technical and tactical skills.</p>
+          </div>
+          
+          <div class="about-card">
+            <div class="about-image">
+              <img src="https://images.unsplash.com/photo-1551958219-acbc608c6377?w=600&h=600&fit=crop" alt="Futsal player in action" loading="lazy">
+            </div>
+            <h3>Our Vision</h3>
+            <p>To be a reference in futsal training, recognized for excellence in athlete development and for our contribution to the sport in our community.</p>
+          </div>
+          
+          <div class="about-card">
+            <div class="about-image">
+              <img src="https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?w=600&h=600&fit=crop" alt="Futsal trophy" loading="lazy">
+            </div>
+            <h3>Our Achievements</h3>
+            <p>More than 50 championships won, hundreds of athletes developed, and a passionate community that grows every day. Our legacy is built on dedication.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="programs" class="section section-programs">
+      <div class="container">
+        <h2 class="section-title">Our Programs</h2>
+        <p class="section-description">Specialized programs for every age group and skill level</p>
+        
+        <div class="programs-grid">
+          <div class="program-card">
+            <div class="program-image skeleton-image"></div>
+            <div class="program-content">
+              <h3 class="skeleton-title"></h3>
+              <p class="skeleton-text"></p>
+              <p class="skeleton-text"></p>
+              <ul class="program-features">
+                <li><div class="skeleton-text"></div></li>
+                <li><div class="skeleton-text"></div></li>
+                <li><div class="skeleton-text"></div></li>
+              </ul>
+              <div class="skeleton-text" style="width: 50%; height: 40px;"></div>
+            </div>
+          </div>
+          <div class="program-card real-content" style="display: none;">
+            <div class="program-image">
+              <img src="https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?w=800&h=500&fit=crop" alt="Kids playing futsal" loading="lazy">
+              <div class="program-badge">Ages 5-8</div>
+            </div>
+            <div class="program-content">
+              <h3>Futsal Initiation</h3>
+              <p>Introduction to futsal through fun and playful activities. Focus on motor skills, coordination, and a love for the sport.</p>
+              <ul class="program-features">
+                <li><i data-feather="check"></i> Basic fundamentals</li>
+                <li><i data-feather="check"></i> Educational games</li>
+                <li><i data-feather="check"></i> Social development</li>
+              </ul>
+              <button class="btn btn-outline">Learn More</button>
+            </div>
+          </div>
+          
+          <div class="program-card">
+            <div class="program-image skeleton-image"></div>
+            <div class="program-content">
+              <h3 class="skeleton-title"></h3>
+              <p class="skeleton-text"></p>
+              <p class="skeleton-text"></p>
+              <ul class="program-features">
+                <li><div class="skeleton-text"></div></li>
+                <li><div class="skeleton-text"></div></li>
+                <li><div class="skeleton-text"></div></li>
+              </ul>
+              <div class="skeleton-text" style="width: 50%; height: 40px;"></div>
+            </div>
+          </div>
+          <div class="program-card real-content" style="display: none;">
+            <div class="program-image">
+              <img src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=800&h=500&fit=crop" alt="Youth in training" loading="lazy">
+              <div class="program-badge">Ages 9-14</div>
+            </div>
+            <div class="program-content">
+              <h3>Technical Development</h3>
+              <p>Refinement of technical and tactical skills. Preparation for competitions and development of strategic thinking.</p>
+              <ul class="program-features">
+                <li><i data-feather="check"></i> Advanced technique</li>
+                <li><i data-feather="check"></i> Game tactics</li>
+                <li><i data-feather="check"></i> Regional competitions</li>
+              </ul>
+              <button class="btn btn-outline">Learn More</button>
+            </div>
+          </div>
+          
+          <div class="program-card">
+            <div class="program-image skeleton-image"></div>
+            <div class="program-content">
+              <h3 class="skeleton-title"></h3>
+              <p class="skeleton-text"></p>
+              <p class="skeleton-text"></p>
+              <ul class="program-features">
+                <li><div class="skeleton-text"></div></li>
+                <li><div class="skeleton-text"></div></li>
+                <li><div class="skeleton-text"></div></li>
+              </ul>
+              <div class="skeleton-text" style="width: 50%; height: 40px;"></div>
+            </div>
+          </div>
+          <div class="program-card real-content" style="display: none;">
+            <div class="program-image">
+              <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=500&fit=crop" alt="High-performance athletes" loading="lazy">
+              <div class="program-badge">Ages 15+</div>
+            </div>
+            <div class="program-content">
+              <h3>High Performance</h3>
+              <p>Intensive program for athletes seeking excellence. Physical, technical, and mental preparation for high-level competitions.</p>
+              <ul class="program-features">
+                <li><i data-feather="check"></i> Intensive training</li>
+                <li><i data-feather="check"></i> Physical conditioning</li>
+                <li><i data-feather="check"></i> National competitions</li>
+              </ul>
+              <button class="btn btn-outline">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="team" class="section section-team">
+      <div class="container">
+        <h2 class="section-title">Our Coaching Team</h2>
+        <p class="section-description">Experienced professionals with a passion for futsal</p>
+        
+        <div class="team-grid">
+          <div class="coach-card">
+            <div class="coach-image skeleton-image"></div>
+            <div class="coach-info">
+              <h3 class="skeleton-title"></h3>
+              <p class="skeleton-text" style="width: 70%;"></p>
+              <p class="skeleton-text"></p>
+            </div>
+          </div>
+          <div class="coach-card real-content" style="display: none;">
+            <div class="coach-image">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Coach João Silva" loading="lazy">
+              <div class="coach-social">
+                <a href="#" aria-label="Coach's Instagram"><i data-feather="instagram"></i></a>
+                <a href="#" aria-label="Coach's LinkedIn"><i data-feather="linkedin"></i></a>
+              </div>
+            </div>
+            <div class="coach-info">
+              <h3>João Silva</h3>
+              <p class="coach-role">Head Coach</p>
+              <p class="coach-description">15 years of experience in professional futsal and athlete development.</p>
+            </div>
+          </div>
+          
+          <div class="coach-card">
+            <div class="coach-image skeleton-image"></div>
+            <div class="coach-info">
+              <h3 class="skeleton-title"></h3>
+              <p class="skeleton-text" style="width: 70%;"></p>
+              <p class="skeleton-text"></p>
+            </div>
+          </div>
+          <div class="coach-card real-content" style="display: none;">
+            <div class="coach-image">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" alt="Coach Maria Santos" loading="lazy">
+              <div class="coach-social">
+                <a href="#" aria-label="Coach's Instagram"><i data-feather="instagram"></i></a>
+                <a href="#" aria-label="Coach's LinkedIn"><i data-feather="linkedin"></i></a>
+              </div>
+            </div>
+            <div class="coach-info">
+              <h3>Maria Santos</h3>
+              <p class="coach-role">Technical Coordinator</p>
+              <p class="coach-description">Specialist in youth academy development and physical preparation.</p>
+            </div>
+          </div>
+          
+          <div class="coach-card">
+            <div class="coach-image skeleton-image"></div>
+            <div class="coach-info">
+              <h3 class="skeleton-title"></h3>
+              <p class="skeleton-text" style="width: 70%;"></p>
+              <p class="skeleton-text"></p>
+            </div>
+          </div>
+          <div class="coach-card real-content" style="display: none;">
+            <div class="coach-image">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop" alt="Coach Carlos Oliveira" loading="lazy">
+              <div class="coach-social">
+                <a href="#" aria-label="Coach's Instagram"><i data-feather="instagram"></i></a>
+                <a href="#" aria-label="Coach's LinkedIn"><i data-feather="linkedin"></i></a>
+              </div>
+            </div>
+            <div class="coach-info">
+              <h3>Carlos Oliveira</h3>
+              <p class="coach-role">Head Coach</p>
+              <p class="coach-description">Former professional goalkeeper with extensive experience in specific training.</p>
+            </div>
+          </div>
+          
+          <div class="coach-card">
+            <div class="coach-image skeleton-image"></div>
+            <div class="coach-info">
+              <h3 class="skeleton-title"></h3>
+              <p class="skeleton-text" style="width: 70%;"></p>
+              <p class="skeleton-text"></p>
+            </div>
+          </div>
+          <div class="coach-card real-content" style="display: none;">
+            <div class="coach-image">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop" alt="Coach Ana Costa" loading="lazy">
+              <div class="coach-social">
+                <a href="#" aria-label="Coach's Instagram"><i data-feather="instagram"></i></a>
+                <a href="#" aria-label="Coach's LinkedIn"><i data-feather="linkedin"></i></a>
+              </div>
+            </div>
+            <div class="coach-info">
+              <h3>Ana Costa</h3>
+              <p class="coach-role">Physical Trainer</p>
+              <p class="coach-description">Certified in Physical Education with a specialization in high performance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="schedule" class="section section-schedule">
+      <div class="container">
+        <h2 class="section-title">Training Schedule</h2>
+        <p class="section-description">Check the available times for each category</p>
+        
+        <div class="schedule-wrapper">
+          <div class="schedule-table-container">
+            <table class="schedule-table">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Monday</th>
+                  <th>Tuesday</th>
+                  <th>Wednesday</th>
+                  <th>Thursday</th>
+                  <th>Friday</th>
+                  <th>Saturday</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="time-cell">09:00 - 10:30</td>
+                  <td><span class="schedule-badge badge-kids">Initiation</span></td>
+                  <td><span class="schedule-badge badge-kids">Initiation</span></td>
+                  <td><span class="schedule-badge badge-kids">Initiation</span></td>
+                  <td><span class="schedule-badge badge-kids">Initiation</span></td>
+                  <td><span class="schedule-badge badge-kids">Initiation</span></td>
+                  <td><span class="schedule-badge badge-elite">High Performance</span></td>
+                </tr>
+                <tr>
+                  <td class="time-cell">14:00 - 15:30</td>
+                  <td><span class="schedule-badge badge-youth">Development</span></td>
+                  <td><span class="schedule-badge badge-youth">Development</span></td>
+                  <td><span class="schedule-badge badge-youth">Development</span></td>
+                  <td><span class="schedule-badge badge-youth">Development</span></td>
+                  <td><span class="schedule-badge badge-youth">Development</span></td>
+                  <td><span class="schedule-badge badge-elite">High Performance</span></td>
+                </tr>
+                <tr>
+                  <td class="time-cell">16:00 - 17:30</td>
+                  <td><span class="schedule-badge badge-elite">High Performance</span></td>
+                  <td><span class="schedule-badge badge-elite">High Performance</span></td>
+                  <td><span class="schedule-badge badge-elite">High Performance</span></td>
+                  <td><span class="schedule-badge badge-elite">High Performance</span></td>
+                  <td><span class="schedule-badge badge-elite">High Performance</span></td>
+                  <td class="empty-cell">-</td>
+                </tr>
+                <tr>
+                  <td class="time-cell">18:00 - 19:30</td>
+                  <td><span class="schedule-badge badge-youth">Development</span></td>
+                  <td><span class="schedule-badge badge-kids">Initiation</span></td>
+                  <td><span class="schedule-badge badge-youth">Development</span></td>
+                  <td><span class="schedule-badge badge-kids">Initiation</span></td>
+                  <td><span class="schedule-badge badge-youth">Development</span></td>
+                  <td class="empty-cell">-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section section-testimonials">
+      <div class="container">
+        <h2 class="section-title">What Our Athletes Say</h2>
+        <p class="section-description">Testimonials from those who live the Futsal City experience</p>
+        
+        <div class="testimonials-slider">
+          <div class="testimonial-card active">
+            <div class="testimonial-quote">
+              <i data-feather="quote"></i>
+            </div>
+            <p class="testimonial-text">"Futsal City has transformed my life! The coaches are incredible and the environment is super motivating. I've grown a lot technically and made great friends."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=100&h=100&fit=crop" alt="Pedro Alves" loading="lazy">
+              <div class="author-info">
+                <h4>Pedro Alves</h4>
+                <p>Athlete - High Performance</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i data-feather="quote"></i>
+            </div>
+            <p class="testimonial-text">"My son started in the initiation program and his development has been impressive. Besides learning futsal, he developed discipline and teamwork."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop" alt="Carla Mendes" loading="lazy">
+              <div class="author-info">
+                <h4>Carla Mendes</h4>
+                <p>Mother of Athlete</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i data-feather="quote"></i>
+            </div>
+            <p class="testimonial-text">"Top-notch facility, qualified coaches, and a methodology that truly works. I recommend Futsal City to anyone who wants to grow in the sport."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=100&h=100&fit=crop" alt="Lucas Ferreira" loading="lazy">
+              <div class="author-info">
+                <h4>Lucas Ferreira</h4>
+                <p>Athlete - Technical Development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonials-controls">
+          <button class="testimonial-prev" aria-label="Previous testimonial">
+            <i data-feather="chevron-left"></i>
+          </button>
+          <div class="testimonials-dots">
+            <button class="dot active" data-index="0" aria-label="Go to testimonial 1"></button>
+            <button class="dot" data-index="1" aria-label="Go to testimonial 2"></button>
+            <button class="dot" data-index="2" aria-label="Go to testimonial 3"></button>
+          </div>
+          <button class="testimonial-next" aria-label="Next testimonial">
+            <i data-feather="chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section section-faq">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-description">Get your questions about our programs answered</p>
+        
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is the minimum age to participate?</span>
+              <i data-feather="chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We accept children starting from 5 years old in the Futsal Initiation program. We have specific programs for each age group, ensuring the proper development of every athlete.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do I need to have prior futsal experience?</span>
+              <i data-feather="chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>No! Our programs cater to beginners and advanced athletes alike. We conduct an initial assessment to place each student in the most suitable group for their skill level.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What are the available training times?</span>
+              <i data-feather="chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We offer training from Monday to Saturday at various times. Check our full schedule in the "Training Schedule" section above. We have options for both morning and afternoon/evening sessions.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is the monthly fee?</span>
+              <i data-feather="chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>The fees vary depending on the chosen program and the weekly training frequency. Contact us via WhatsApp or the form to receive a personalized quote.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do you offer a trial class?</span>
+              <i data-feather="chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! We offer a free trial class for new students. It's a great opportunity to get to know our facilities, methodology, and coaching team before enrolling.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-description">We are ready to assist you</p>
+        
+        <div class="contact-grid">
+          <div class="contact-form-wrapper">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your name">
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" name="email" required placeholder="your@email.com">
+                </div>
+                
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" required placeholder="(00) 00000-0000">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="program">Program of Interest</label>
+                <select id="program" name="program" required>
+                  <option value="">Select a program</option>
+                  <option value="iniciacao">Futsal Initiation (Ages 5-8)</option>
+                  <option value="desenvolvimento">Technical Development (Ages 9-14)</option>
+                  <option value="alto-rendimento">High Performance (Ages 15+)</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us more about your interest..."></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Send Message</span>
+                <i data-feather="send"></i>
+              </button>
+            </form>
+            
+            <div id="form-success" class="form-message success">
+              <i data-feather="check-circle"></i>
+              <p><strong>Message sent successfully!</strong> We will contact you shortly.</p>
+            </div>
+          </div>
+          
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="info-icon">
+                <i data-feather="map-pin"></i>
+              </div>
+              <div class="info-content">
+                <h3>Location</h3>
+                <p>Sunderman Complex<br>1631 9th Street<br>Palm Harbor, FL 34683</p>
+                <p>Boltsmar Outdoor Ball Hockey Rink<br>3120 Tampa Rd<br>Oldsmar, FL 34677</p>
+                <p>Cypress Forest Recreation Center<br>650 Pine Ave N<br>Oldsmar, FL 34677</p>
+              </div>
+            </div>
+            
+            <div class="info-card">
+              <div class="info-icon">
+                <i data-feather="mail"></i>
+              </div>
+              <div class="info-content">
+                <h3>E-mail</h3>
+                <a href="mailto:citiveras@gmail.com">citiveras@gmail.com</a>
+              </div>
+            </div>
+            
+            <div class="info-card">
+              <div class="info-icon">
+                <i data-feather="smartphone"></i>
+              </div>
+              <div class="info-content">
+                <h3>WhatsApp</h3>
+                <a href="https://wa.me/18137254284" target="_blank" rel="noopener noreferrer">813-725-4284</a>
+              </div>
+            </div>
+            
+            <div class="info-card">
+              <div class="info-icon">
+                <i data-feather="clock"></i>
+              </div>
+              <div class="info-content">
+                <h3>Opening Hours</h3>
+                <p>Monday to Friday: 8am - 8pm<br>Saturday: 8am - 2pm<br>Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3 class="footer-logo">FUTSAL<span>CITY</span></h3>
+          <p>Developing elite athletes with passion, discipline, and excellence since 2010.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i data-feather="instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i data-feather="facebook"></i></a>
+            <a href="https://wa.me/18137254284" aria-label="WhatsApp"><i data-feather="message-circle"></i></a>
+            <a href="#" aria-label="YouTube"><i data-feather="youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#team">Coaches</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Receive news and training tips</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your e-mail" required>
+            <button type="submit" aria-label="Subscribe to newsletter">
+              <i data-feather="send"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Futsal City. All rights reserved.</p>
+        <p>Developed with <i data-feather="heart"></i> for passionate athletes</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="tryout-modal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" id="close-tryout-modal" aria-label="Close modal">
+        <i data-feather="x"></i>
+      </button>
+      <div class="modal-icon">
+        <i data-feather="calendar"></i>
+      </div>
+      <h2>Next Tryout!</h2>
+      <p class="modal-subtitle">Enroll TODAY!</p>
+      <div class="modal-info">
+        <div class="modal-info-item">
+          <i data-feather="clock"></i>
+          <div>
+            <strong>When:</strong>
+            <span>Wednesday, 03/26/25 at 6pm</span>
+          </div>
+        </div>
+        <div class="modal-info-item">
+          <i data-feather="map-pin"></i>
+          <div>
+            <strong>Where:</strong>
+            <span>1631 9th St, Palm Harbor, FL 34683</span>
+          </div>
+        </div>
+        <div class="modal-info-item">
+          <i data-feather="phone"></i>
+          <div>
+            <strong>Contact:</strong>
+            <span>813-725-4284</span>
+          </div>
+        </div>
+      </div>
+      <a href="https://club.spond.com/landing/signup/futsalcity/form/F76EF03DDB764AA99D2B68381B00324A" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-full">
+        <span>Enroll Now</span>
+      </a>
+    </div>
+  </div>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top" data-tooltip="Back to top">
+    <i data-feather="arrow-up"></i>
+  </button>
+
+  <div id="sticky-cta" class="sticky-cta">
+    <div class="sticky-cta-content">
+      <div class="sticky-cta-text">
+        <strong>Ready to start?</strong>
+        <span>Enroll now and get 1 free class!</span>
+      </div>
+      <button class="btn btn-primary" id="sticky-cta-btn">
+        <span>Enroll Now</span>
+        <i data-feather="arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
